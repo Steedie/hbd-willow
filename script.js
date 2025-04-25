@@ -49,12 +49,11 @@ function startPhysics() {
 
   World.add(world, [floor, leftWall, rightWall]);
 
-  // Load images and create bodies
-  const catImages = [
-    "images/test1.webp",
-    "images/test2.webp",
-    "images/test3.webp",
-  ];
+  let catImages = [];
+
+  for(let i = 0; i < 10; i++){
+    catImages.push(`images/w${i + 1}.webp`);
+  };
 
   catImages.forEach((src, index) => {
     const size = 60 + Math.random() * 40;
