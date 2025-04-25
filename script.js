@@ -51,8 +51,8 @@ function startPhysics() {
 
   let catImages = [];
 
-  for(let i = 0; i < 10; i++){
-    catImages.push(`images/w${i + 1}.webp`);
+  for(let i = 1; i < 11; i++){
+    catImages.push(`images/w${i}.webp`);
   };
 
   catImages.forEach((src, index) => {
