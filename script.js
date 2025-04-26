@@ -77,7 +77,7 @@ function startPhysics() {
     const y = window.innerHeight / 2 + (Math.random() - 0.5) * 100;
 
     const cat = Bodies.circle(x, y, radius, {
-      restitution: 1.5,
+      restitution: 1,
       render: {
         sprite: {
           texture: src,
